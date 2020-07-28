@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.spring.bean.Country;
+import com.spring.rest.bean.Country;
 import com.spring.rest.exception.CountryNotFoundException;
 import com.spring.rest.service.CountryService;
 

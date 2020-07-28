@@ -277,3 +277,44 @@
 2020-06-29 15:35:21,303 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2020-07-15 11:07:18,260 [Worker-17: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2020-07-16 09:08:38,514 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-07-17 18:11:10,043 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-18 19:12:06,712 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-20 09:20:49,519 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-22 10:41:11,735 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-27 10:27:17,063 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-28 10:37:34,999 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-07-28 11:13:06,382 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2020-07-28 11:13:09,492 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.restpractice:restpractice:0.0.1-SNAPSHOT @ D:\Sai_workSpace\restpractice\pom.xml.
+2020-07-28 11:13:13,559 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restpractice/src/main/java
+2020-07-28 11:13:13,560 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /restpractice/src/main/resources
+2020-07-28 11:13:13,561 [Worker-16: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /restpractice/src/test/java
+2020-07-28 11:13:16,133 [Worker-16: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for restpractice
+2020-07-28 11:13:16,173 [Worker-16: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 9 sec
+2020-07-28 12:22:48,085 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Sai_workSpace\SpringMVCCRUD\pom.xml
+2020-07-28 12:22:48,255 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.spring.test:SpringMVCCRUD:0.0.1-SNAPSHOT @ D:\Sai_workSpace\SpringMVCCRUD\pom.xml.
+2020-07-28 12:22:48,547 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCCRUD/src/main/java
+2020-07-28 12:22:48,548 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCCRUD/src/main/resources
+2020-07-28 12:22:48,548 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCCRUD/src/test/java
+2020-07-28 12:22:50,734 [Worker-24: Creating maven-archetype-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2020-07-28 12:25:34,452 [Worker-27: Launching Executing install in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Sai_workSpace\SpringMVCCRUD
+2020-07-28 12:25:34,454 [Worker-27: Launching Executing install in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\java\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml install
+2020-07-28 12:34:15,344 [Worker-30: Cleaning all projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.spring.test:SpringMVCCRUD:0.0.1-SNAPSHOT @ D:\Sai_workSpace\SpringMVCCRUD\pom.xml.
+2020-07-28 12:34:16,781 [Worker-30: Cleaning all projects] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SpringMVCCRUD
+2020-07-28 12:34:18,120 [Worker-24: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-07-28 12:34:18,141 [Worker-24: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-28 12:34:18,164 [Worker-24: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-07-28 12:34:18,165 [Worker-24: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Sai_workSpace\SpringMVCCRUD\src\test\resources
+2020-07-28 12:34:18,166 [Worker-24: Build Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCCRUD
+2020-07-28 12:34:18,168 [Worker-24: Build Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCCRUD
+2020-07-28 12:34:18,181 [Worker-24: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-07-28 12:40:29,380 [Worker-24: Launching Executing clean in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Sai_workSpace\SpringMVCCRUD
+2020-07-28 12:40:29,381 [Worker-24: Launching Executing clean in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\java\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml clean
+2020-07-28 12:40:40,862 [Worker-31: Launching Executing install in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Sai_workSpace\SpringMVCCRUD
+2020-07-28 12:40:40,862 [Worker-31: Launching Executing install in D__Sai_workSpace_SpringMVCCRUD] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B -s D:\java\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml install
+2020-07-28 12:40:58,501 [Worker-28: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-07-28 12:40:58,502 [Worker-28: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-07-28 12:40:58,504 [Worker-28: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-07-28 12:40:58,519 [Worker-28: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Sai_workSpace\SpringMVCCRUD\src\test\resources
+2020-07-28 12:40:58,519 [Worker-28: Build Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCCRUD
+2020-07-28 12:40:58,520 [Worker-28: Build Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCCRUD
+2020-07-28 12:40:58,543 [Worker-28: Build Project] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

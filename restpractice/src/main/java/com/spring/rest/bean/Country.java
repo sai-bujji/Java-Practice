@@ -1,4 +1,4 @@
-package com.spring.bean;
+package com.spring.rest.bean;
 
 public class Country {
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.spring.bean.Country;
+import com.spring.rest.bean.Country;
 
 @Service
 public class CountryService {
