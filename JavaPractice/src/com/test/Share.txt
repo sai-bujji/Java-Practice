@@ -1,0 +1,84 @@
+Design patterns
+Threads:
+--------
+-Volatile
+-Automic
+-Different ways to create threads other than Threads and runnable
+-Callable and runnable
+-Executer and executeservice
+-  and execute methods
+-Blocking quees
+-wait, notify, notifyall
+Exeptions:
+-----------
+Collections:
+--------------
+-Data stractures
+-Linked List
+-ArrayList
+-HashMap
+-HashTable
+-LinkedHashMap
+-TreeMap
+-Stack
+-queue
+String
+
+
+1)functional interface, why introduced
+2)streams and use cases
+3)hashcode and equals importance
+4)spring dependency injection and IOC
+5)rest and soap difference
+6)rest put and post
+
+
+
+Spring:
+-DI
+-IOC
+-Annotations
+-Oauth
+
+Hibernate:
+-Life cycle
+-Mapping techniques
+-get and Load
+-Second level cache
+
+JPA:
+
+
+REST:
+-get, post, delete, put
+-Exception handling
+
+
+
+JVM architecture:
+
+Class loader:
+1. Loading( Name, head class, interface or enum, )
+2. Linking(Verification, Preparation, Resoulation)
+3. initialization(Bootstap class loader, Extenction class loader, System class loader)
+
+JVM Memory:
+
+1. Method are
+2. Heap memory
+3. Stack area
+4. PC register
+5. Native method method stack
+
+Execution Engine:
+
+1. Interpeter
+2. JIT(just in time compiler)
+3. Garbage Collecor
+
+Native Interface:
+
+Native Method libraries:
+
+
+
