@@ -1,31 +1,27 @@
-package com.spring.crud.bean;
+package com.spring.crud.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
+import org.jboss.logging.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.spring.crud.bean.Employee;
+import com.spring.crud.dao.EmployeeDAO;
 
 @Service
 public class EmployeeService {
+	
+	private static final Logger logger = Logger.getLogger(EmployeeService.class);
+	
+	@Autowired
+	EmployeeDAO employeeDao;
 
-	static HashMap<Integer, Employee> employeeMap = getEmployeess();
 	
-	public EmployeeService() {
-		super();
-		if(employeeMap == null) {
-			
-			employeeMap = new HashMap<Integer, Employee>();
-			
-			employeeMap.put(1, new Employee("SAI", "1111"));
-			employeeMap.put(2, new Employee("Madhu", "1122"));
-			employeeMap.put(3, new Employee("Nageswara Rao", "1133"));
-			employeeMap.put(4, new Employee("Sailaja", "1144"));
-			
-		}
-	}
-	
-	
-	public static HashMap<Integer, Employee> getEmployeess(){
-		return employeeMap;
-		
-	}
+	public List<Employee> getAllEmployees() {
+		logger.info("-------enterd in EmployeeService class  getAllEmployees method------------");
+        return employeeDao.getAllEmployees();
+    }
 }
