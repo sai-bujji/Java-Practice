@@ -1,26 +1,42 @@
 package com.spring.crud.bean;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class Employee {
 
-	
+	String id;
+	@NotEmpty
 	String name;
+	@NotEmpty
 	String email;
+	@NotEmpty
 	String address;
+	@NotEmpty
 	String telephone;
 	
-	Employee(){
+	public Employee(){
 		super();
 	}
 	
 	
-	public Employee(String name, String email, String address, String telephone) {
+	public Employee(String id, String name, String email, String address, String telephone) {
 		super();
+		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.address = address;
 		this.telephone = telephone;
 	}
 
+
+	public String getId() {
+		return id;
+	}
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 
 	public String getName() {
@@ -55,12 +71,12 @@ public class Employee {
 		this.telephone = telephone;
 	}
 
+
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", email=" + email + ", address=" + address + ", telephone=" + telephone
-				+ "]";
+		return "Employee [id=" + id + ", name=" + name + ", email=" + email + ", address=" + address + ", telephone="
+				+ telephone + "]";
 	}
-	
-	
+
 	
 }

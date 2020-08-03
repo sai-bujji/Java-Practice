@@ -18,6 +18,7 @@
 		<jsp-version>2.1</jsp-version>
 		<jstl-version>1.2</jstl-version>
 		<java.version>1.7</java.version>
+		<aspectj-version>1.7.4</aspectj-version>
 
 	</properties>
 	<dependencies>
@@ -70,7 +71,26 @@
 			<artifactId>hibernate-c3p0</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.1.Final</version>
+		</dependency>
+		
+		<!-- AspectJ -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj-version}</version>
+		</dependency>
+		
 		<!--MYSQL Connector -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -129,5 +149,11 @@
                 </configuration>
             </plugin>
         </plugins>
+         <resources>
+    <resource>
+      <directory>src/main/java</directory>
+      <excludes><exclude>**/*.java</exclude></excludes>
+    </resource>
+  </resources>
 	</build>
 </project>
