@@ -49,7 +49,10 @@ public class EmployeeController {
 		if(br.hasErrors()) {
 			model.addObject("employee", employee);
 			model.setViewName("EmployeeForm");
+			return model;
+		}else {
+			employeeService.addEmployee(employee);
 		}
-		return model;
+		return new ModelAndView("redirect:/");
 	}
 }

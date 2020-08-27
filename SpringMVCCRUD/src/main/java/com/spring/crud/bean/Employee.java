@@ -1,17 +1,44 @@
 package com.spring.crud.bean;
 
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class Employee {
+@Entity
+@Table(name = "EMP_TBL")
+public class Employee implements Serializable{
 
-	String id;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3581434085568057973L;
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	@Column
+	int id;
+	
 	@NotEmpty
+	@Column
 	String name;
+	
 	@NotEmpty
+	@Column
 	String email;
+	
 	@NotEmpty
+	@Column
 	String address;
+	
 	@NotEmpty
+	@Column
 	String telephone;
 	
 	public Employee(){
@@ -19,7 +46,7 @@ public class Employee {
 	}
 	
 	
-	public Employee(String id, String name, String email, String address, String telephone) {
+	public Employee(int id, String name, String email, String address, String telephone) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -29,12 +56,12 @@ public class Employee {
 	}
 
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
