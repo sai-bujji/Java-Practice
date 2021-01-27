@@ -22,7 +22,7 @@ public class EmployeeService {
 	@Transactional
 	public List<Employee> getAllEmployees() {
 		logger.info("-------enterd in EmployeeService class  getAllEmployees method------------");
-        return employeeDao.getAllEmployees();
+        return employeeDao.getEmployeess();
     }
 
 	@Transactional

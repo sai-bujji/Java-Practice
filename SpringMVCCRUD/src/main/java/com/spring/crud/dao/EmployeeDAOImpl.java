@@ -20,7 +20,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 	@Autowired
 	SessionFactory sessionFactory;
 	
-	static List<Employee> employeeMap = getEmployeess();
+	List<Employee> employeeMap = getAllEmployees();
 	
 	public EmployeeDAOImpl() {
 		super();
@@ -44,8 +44,11 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 		return employeeMap;
 	}
 	
-	public static List<Employee> getEmployeess(){
-		return employeeMap;
+	@SuppressWarnings("unchecked")
+	public List<Employee> getEmployeess(){
+		logger.info("==============entered in getEmployeess method==============");
+		return sessionFactory.getCurrentSession().createQuery("from Employee")
+                .list();
 		
 	}
 	
