@@ -9,7 +9,7 @@ public class LambdaFunctional1 {
 		List<String> li = new ArrayList<>();
 		li.add("Hishika");
 		li.add("Sai");
-		li.add("Madhuri");
+		li.add("Madhuri"); 
 		
 		li.forEach((n)->System.out.println(n));
 	}
