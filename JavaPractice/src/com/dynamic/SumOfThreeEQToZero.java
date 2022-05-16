@@ -1,10 +1,12 @@
-package com.test;
+package com.dynamic;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class SumOfThreeEQToZero {
+	
 	public static void main(String arr[]) {
+
 		Integer ar[] = {-2,8,4,-7,4,-1,8,-6,-1,-8, 9,-4,10,10,8};
 		List<List<Integer>> mainList = new ArrayList<>();
 		for(int i=0; i<ar.length-1; i++){
@@ -24,6 +26,7 @@ public class Test {
 			}
 		}
 		System.out.println(mainList);
-	}
 	
+	}
+
 }
