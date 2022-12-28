@@ -3,6 +3,7 @@ package com.java8;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -14,7 +15,27 @@ class Product{
         this.id = id;  
         this.name = name;  
         this.price = price;  
-    }  
+    }
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public float getPrice() {
+		return price;
+	}
+	public void setPrice(float price) {
+		this.price = price;
+	} 
+    
+    
 }  
 
 public class StreamAPI {
@@ -32,6 +53,7 @@ public class StreamAPI {
         
         //Ex 1
         List<Float> pricegreater = productsList.stream().filter(p->p.price>30000).map(p->p.price).collect(Collectors.toList());
+        Map<String, String> ma = productsList.stream().filter(p->p.price>30000).map(p->p).collect(Collectors.toMap(Product::getName, Product::getName));
         System.out.println(pricegreater);
         
         //Ex 2
@@ -57,7 +79,8 @@ public class StreamAPI {
       		 * .thenComparingInt(Person::getAge));
       		 */
       		
-      		
+        //Fore removing the duplicates
+        //List<Integer> listWithoutDuplicates = numbersList.stream().distinct().collect(Collectors.toList());
       		
 
       		/*
