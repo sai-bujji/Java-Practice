@@ -1,28 +1,29 @@
 package com.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
-	static void printPattern(int lastIndex, int firstIndex, String[] ar) {
-		System.out.println();
-		int firstCount = 0;
-		for (int i = lastIndex; i < ar.length; i++) {
-			if (firstCount >= 4) {
-				continue;
-			}
-			System.out.print(ar[i]);
-			firstCount++;
-		}
-		for (int i = 0; i < firstIndex; i++) {
-			if (firstCount >= 4) {
-				continue;
-			}
-			System.out.print(ar[i]);
-			firstCount++;
-		}
-	}
-
 	public static void main(String arr[]) {
-		System.out.println("ABC" + 'D' + 10);
-		System.out.println(10 + 'D' + "EFG");
+		Integer ar[] = {-2,8,4,-7,4,-1,8,-6,-1,-8, 9,-4,10,10,8};
+		List<List<Integer>> mainList = new ArrayList<>();
+		for(int i=0; i<ar.length-1; i++){
+			for(int j=i+1; j<ar.length-1; j++){
+				for(int k=j+1; k<ar.length; k++){
+					List<Integer> li = new ArrayList<>();
+					if(ar[i]+ar[j]+ar[k] == 0){
+						li.add(ar[i]);
+						li.add(ar[j]);
+						li.add(ar[k]);
+					}
+					if(li!=null && li.size()>0) {
+						mainList.add(li);
+					}
+					
+				}
+			}
+		}
+		System.out.println(mainList);
 	}
-
+	
 }
