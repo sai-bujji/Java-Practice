@@ -1,7 +1,6 @@
 package com.java8;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -38,8 +37,7 @@ class Product{
     
 }  
 
-class Employee{
-	
+class Empe{
 	
 	String name;
 	int age;
@@ -69,7 +67,7 @@ class Employee{
 	public void setDesignationa(String designationa) {
 		this.designationa = designationa;
 	}
-	public Employee(String name, int age, int salary, String designationa) {
+	public Empe(String name, int age, int salary, String designationa) {
 		super();
 		this.name = name;
 		this.age = age;
