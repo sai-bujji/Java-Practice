@@ -146,6 +146,8 @@ public class StreamAPI {
 		// For each
 		System.out.println("===============printing for each=========");
 		list.forEach(a -> System.out.println(a));
+		list.stream().sorted((a, b) -> a.getName().compareTo(b.getName()));
+		list.stream().sorted(Comparator.comparing(Empe::getName));
 
 		// Sorting by name
 		System.out.println("==============Sorting==================");

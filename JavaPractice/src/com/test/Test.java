@@ -1,28 +1,19 @@
 package com.test;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class Test {
-	static void printPattern(int lastIndex, int firstIndex, String[] ar) {
-		System.out.println();
-		int firstCount = 0;
-		for (int i = lastIndex; i < ar.length; i++) {
-			if (firstCount >= 4) {
-				continue;
-			}
-			System.out.print(ar[i]);
-			firstCount++;
-		}
-		for (int i = 0; i < firstIndex; i++) {
-			if (firstCount >= 4) {
-				continue;
-			}
-			System.out.print(ar[i]);
-			firstCount++;
-		}
+	public static void main(String ar[]) {
+		int[] arr = {1, 2, 1, 3,2, 4, 5};
+		List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
+		
+		Map<Object, Long> map = list.stream().collect(Collectors.groupingBy(a -> a, Collectors.counting()));
+		
+		map.forEach((a, b) -> {
+			System.out.println(a+    "    "+b);
+		});
 	}
-
-	public static void main(String arr[]) {
-		System.out.println("ABC" + 'D' + 10);
-		System.out.println(10 + 'D' + "EFG");
-	}
-
 }
